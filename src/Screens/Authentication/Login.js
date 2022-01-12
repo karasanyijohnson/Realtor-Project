@@ -18,12 +18,12 @@ const Login =({setToken})=>{
     const [username, setUserName] = useState();
     const [password, setPassword] = useState();
 // Function to submit the login data in form
-    const handleSubmit = async e => {
+    const handleSubmit = async e=> {
         e.preventDefault();
-        const token = await loginUser({
-          username,
-          password
-        });
+    const token = await loginUser({
+        username,
+        password
+      });
         setToken(token);
       }
     return(

@@ -4,21 +4,10 @@ import Login from './Screens/Authentication/Login';
 import Dashboard from './Screens/AppScreens/Dashboard';
 import './App.css'
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
-
-
-// Function to set Token
-const setToken=(userToken)=>{
-sessionStorage.getItem('token', JSON.stringify(userToken));
-}
-// function to get token
-const getToken=()=>{
-
-}
-
+import useToken from './Screens/Authentication/useToken';
 
 function App() {
-  const token = getToken() 
-  // const [token, setToken]=useState() 
+  const {token, setToken}= useToken()
   if(!token){
     return <Login setToken={setToken}/>
   }
