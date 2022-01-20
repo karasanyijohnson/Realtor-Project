@@ -62,6 +62,7 @@ const Login =({setToken})=>{
            border:'1px solid #A16207',
            boxSizing:'border-box',
            type:'submit',
+           color:'#FFFFFF'
             }}
             // onClick={handleSubmit}
             >
@@ -106,7 +107,8 @@ const Login =({setToken})=>{
             height:'30px',
             border:'1px solid #A16207', 
             boxSizing:'border-box',
-            marginTop:'5px'
+            marginTop:'5px',
+            color:'#FFFFFF'
           }}
             >
             Sign up

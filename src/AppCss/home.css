@@ -1,0 +1,95 @@
+.categoriesHomeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.categoriesTitle{
+    color: #A16207;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+}
+.buttonCategory{
+    width: 122px;
+    height: 38px;
+    background: #FFFFFF;
+    border: 2px solid #A16207;
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: #00000080;
+    margin: 20px;
+}
+.filteredCategory{
+    width: 176px;
+    height: 63px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(161, 98, 7, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #00000080;
+    margin: 10px;
+}
+.applyFilterButton{
+    width: 176px;
+    height: 62px;
+    background: rgba(161, 98, 7, 0.7);
+    border: 1px solid rgba(161, 98, 7, 0.56);
+    box-sizing: border-box;
+    border-radius: 20px;
+    color: #FFFFFF;
+    margin: 10px;
+}
+/* CSS for Properties Container on Homepage*/
+.CardPropertiesContainer{
+   display:flex;
+   /* flex-wrap:wrap;
+   flex-Direction:row;
+   justify-content:center;
+   align-items:center;
+   background:grey */
+}
+.cardBodyProperties{
+    width:367.27px;
+    height:266px;
+}
+.cardBodyImage{
+    width: 100%;
+    height: 80%;
+}
+.cardBodyDescriptions{
+    display: flex;
+   justify-content: space-around;
+    background: rgba(196, 196, 196, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 10px 10px;
+}
+.description{
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(161, 98, 7, 0.8);
+}
+.PropertyPrice{
+    width: 100px;
+    height: 44px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.7)
+}
