@@ -4,58 +4,64 @@ import { Card, Row, Col } from 'react-bootstrap'
 import {BsInstagram, BsFacebook, BsWhatsapp,BsTelephone} from 'react-icons/bs'
 import {MdOutlineMail} from 'react-icons/md'
 import {BiCopyright} from 'react-icons/bi';
-import './Footer.css'
+import '../AppCss/footer.css'
 
 
 const Footer =()=>{
     return(
-        <Card style={{background:'#334155'}}>
-         <Row style={{display:'flex', justifyContent:'space-between', color:'#FFFFFF'}}>
-         <Col>
-         <h1>REALTOR</h1>
-         <Row style={{justifyContent:'center', alignItems:'center', display:'flex'}}>    
-         <Col>
-         <BiCopyright/>
-         </Col>  
-         <Col>
-         <p>2022 REALTOR</p>
-         </Col>
-        </Row>
-         </Col>
-         <Col>
-         <h2>Product</h2>
-         <p><Card.Link href='/'  className='footerLink'>Rental Houses</Card.Link></p>
-         <p><Card.Link href='/'  className='footerLink'>Houses for sale</Card.Link></p>
-         <p><Card.Link href='/'  className='footerLink'>Sell Your House</Card.Link></p>
-         </Col>
-         <Col>
-         <h2>Support</h2>
-         <p><Card.Link href='/' className='footerLink'> Privacy Policy</Card.Link></p>
-         <p><Card.Link href='/' className='footerLink'>How We work</Card.Link></p>
-         <p><Card.Link href='/'  className='footerLink'>Book Appointment</Card.Link></p>
-         </Col>
-         <Col>
-         <h1>Connect with us</h1>
-         <Row style={{display:'flex', justifyContent:'space-between', width:'70%'}} >
-             <Col>
-            <Card.Link className='footerLink'><BsInstagram/></Card.Link>
-             </Col>
-             <Col>
-             <Card.Link className='footerLink' ><BsFacebook/></Card.Link>
-             </Col>
-             <Col><Card.Link className='footerLink'><BsWhatsapp/></Card.Link></Col>
-         </Row>
-         <Row style={{display:'flex', justifyContent:'space-between',width:'70%'}} >
-             <Col><Card.Link  className='footerLink'> <BsTelephone/></Card.Link></Col>
-             <Col>+250 748 787 888</Col>
-         </Row>
-         <Row style={{display:'flex', justifyContent:'space-between', width:'90%'}} >
-             <Col><Card.Link className='footerLink'><MdOutlineMail/></Card.Link></Col>
-             <Col>realtor2022@gmail.com</Col>
-         </Row>
-         </Col>
-         </Row>
-        </Card>
+        
+        <Card.Footer style={{background:'#334155'}}>
+            <Row>
+                <Col>
+                <h2 style={{color:'white'}}>REALTOR</h2>
+                <p style={{color:'white'}}> <BiCopyright/> 2022 REALTOR</p>
+                </Col>
+                <Col>
+                <h3 style={{color:'white'}}>Product</h3>
+                <p><Card.Link href='#'className=' footerLink'>Rental Houses</Card.Link></p>
+                <p><Card.Link href='#' className=' footerLink'>Houses for sale</Card.Link></p>
+                <p> <Card.Link href='#' className=' footerLink'>Sell Your House</Card.Link></p>
+                </Col>
+                <Col>
+                <h3 style={{color:'white'}}>Support</h3>
+                <p><Card.Link href='#'className=' footerLink'>Privacy Policy</Card.Link></p>
+                <p><Card.Link href='#'className=' footerLink'>How We work</Card.Link></p>
+                <p ><Card.Link href='#' className=' footerLink'>Book Appointment</Card.Link></p>
+                </Col>
+                <Col>
+                <h3 style={{color:'white'}}>Connect with us</h3>
+                <Card.Body>
+                <Row>
+                    <Col>
+                    <Card.Link href='#'className=' footerLink'><BsInstagram/></Card.Link>
+                    </Col>
+                    <Col>
+                    <Card.Link href='#'className=' footerLink'><BsFacebook/></Card.Link>
+                    </Col>
+                    <Col>
+                    <Card.Link href='#'className=' footerLink'><BsWhatsapp/></Card.Link>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                    <Card.Link href='#' className=' footerLink'><BsTelephone/></Card.Link>
+                    </Col>
+                    <Col xs lg="8">
+                    <p style={{color:'white'}}>+250 7888-555-555</p>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                    <Card.Link href='#' className=' footerLink'><MdOutlineMail/></Card.Link>
+                    </Col>
+                    <Col xs lg="8">
+                    <p style={{color:'white'}}>reactor@gmail.com</p>
+                    </Col>
+                </Row>
+                </Card.Body>
+                </Col>
+            </Row>
+        </Card.Footer>
     )
 }
 

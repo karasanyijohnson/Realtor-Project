@@ -40,7 +40,7 @@ const Login =({setToken})=>{
     return(
       <Container style={{alignItems:'center'}}>
       <Row style={{display:'flex', justifyContent:'center', marginTop:'90px'}}>
-        <Card style={{width:'30%', margin:'10px'}}>
+        <Card style={{width:'30%', margin:'10px', border:'1px solid'}}>
         <Card.Body>
           <Card.Title style={{textAlign:'center', marginBottom:'35px', color:'#A16207', fontSize:'25px', fontWeight:'500'}}>
            Sign In

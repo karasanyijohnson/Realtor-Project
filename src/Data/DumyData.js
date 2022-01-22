@@ -9,6 +9,7 @@ const Data = [
         bathroom:2,
         toilete:1,
         price:1000,
+        location:'Kigali, Masoro',
         imgUrl:'https://media.istockphoto.com/photos/large-house-with-steep-roof-and-side-entry-three-car-garage-picture-id1272163106?b=1&k=20&m=1272163106&s=170667a&w=0&h=pTjbBRKTcnhs-oIGpuSB4TyAE5768gp0BefDXxyUNTU='
     },
     {
@@ -17,7 +18,8 @@ const Data = [
         bathroom:2,
         toilete:1,
         price:2000,
-        imgUrl:'https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80',
+        location:'Kigali, Masoro',
+        imgUrl:'https://media.istockphoto.com/photos/modern-living-room-interior-3d-render-picture-id1293762741?b=1&k=20&m=1293762741&s=170667a&w=0&h=2RI8SmBN4MrEZuTvdwRzaeB887x-dukFcQBpyQ-qwS4=',
     },
     {
         id:3,
@@ -25,6 +27,7 @@ const Data = [
         bathroom:2,
         toilete:1,
         price:1000,
+        location:'Kigali, Masoro',
         imgUrl:'https://media.istockphoto.com/photos/we-all-deserve-a-fresh-break-from-the-city-picture-id1326994520?b=1&k=20&m=1326994520&s=170667a&w=0&h=h9h0d6bcN0Mrr2S7iVzS331BM7U8G3XyCWiVeVjh-AI='
     },
     {
@@ -33,6 +36,7 @@ const Data = [
         bathroom:2,
         toilete:1,
         price:1000,
+        location:'Kigali, Masoro',
         imgUrl:'https://media.istockphoto.com/photos/modern-living-room-interior-3d-render-picture-id1293762741?b=1&k=20&m=1293762741&s=170667a&w=0&h=2RI8SmBN4MrEZuTvdwRzaeB887x-dukFcQBpyQ-qwS4='
     },
     {
@@ -41,6 +45,7 @@ const Data = [
         bathroom:2,
         toilete:1,
         price:1000,
+        location:'Kigali, Masoro',
         imgUrl:'https://media.istockphoto.com/photos/modern-elegant-kitchen-stock-photo-picture-id1297586166?b=1&k=20&m=1297586166&s=170667a&w=0&h=Ka-3OYiTlbCiwCJhoXeTqRewh3DI4qfSh1B0baJMcCk='
     },
     {
@@ -49,6 +54,7 @@ const Data = [
         bathroom:2,
         toilete:1,
         price:1000,
+        location:'Kigali, Masoro',
         imgUrl:'https://media.istockphoto.com/photos/home-with-blue-siding-and-stone-faade-on-base-of-home-picture-id1272128530?b=1&k=20&m=1272128530&s=170667a&w=0&h=k9lT5-DEmkmehDb-EKRHoP1-op2DTgz4ibiWGXmj7h8='
     }
     ,
@@ -58,6 +64,7 @@ const Data = [
         bathroom:2,
         toilete:1,
         price:1000,
+        location:'Kigali, Masoro',
         imgUrl:'https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
     },
     {
@@ -66,6 +73,7 @@ const Data = [
         bathroom:2,
         toilete:1,
         price:1000,
+        location:'Kigali, Masoro',
         imgUrl:'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'
     },
     {
@@ -74,6 +82,7 @@ const Data = [
         bathroom:2,
         toilete:1,
         price:1000,
+        location:'Kigali, Masoro',
         imgUrl:'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
     }
 ]

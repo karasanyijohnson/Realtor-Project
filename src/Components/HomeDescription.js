@@ -1,41 +1,49 @@
 import React from 'react';
-import {Card, Row, Col, Button} from 'react-bootstrap';
+import { Card, Row, Col, Button} from 'react-bootstrap';
 import Image1 from './../Images/Rectangle.jpg';
 import Image2 from './../Images/Rectangle (2).jpg';
 import Image3 from './../Images/Rectangle (1).jpg';
+import '../AppCss/home.css'
 
 
-
-const HomeDescription =()=>{
-    return(
+const HomeDescription = () => {
+    return (
         <Card>
-           <Row style={{display:'flex',widht:'98%', marginLeft:'10px'}}>
-               <Col style={{border:'1px solid', width:'50%'}}>
-                  <Card>
-                      <Card.Text>
-                      BUY  RENT SELL HOUSES ON THE GO
-                      </Card.Text>
-                      <Card.Body>
-                          <Button>Explorer</Button>
-                          <Button>Book Appointment</Button>
-                      </Card.Body>
-                  </Card>
+            <Row>
+                <Col>
+                    <Card>
+                        <Card.Title className='CardTitle'>
+                            BUY  RENT SELL HOUSES ON THE GO
+                        </Card.Title>
+                        <Row>
+                            <Col>
+                                <Button>Explore</Button>
+                            </Col>
+                            <Col>
+                                <Button>Book Appointment</Button>
+                            </Col>
+                        </Row>
+                    </Card>
                 </Col>
-               <Col style={{border:'1px solid', width:'50%'}}>
-               <Card style={{diplay:'flex'}}>
-               <Card style={{display:'flex',width:'578px',height:'416px', background:'green',justifyContent:'center', alignItems:'center'}}>
-                    <Card.Img src={Image1} style={{width:'50%'}}></Card.Img>
-                </Card>
-                <Card style={{display:'flex',width:'578px',height:'416px', background:'grey', justifyContent:'center',alignItems:'center'}}>
-                    <Card.Img src={Image2} style={{width:'50%',height:'50%'}}></Card.Img>
-                </Card>
-               </Card>
-               <Card style={{display:'flex',width:'578px', height:'416px', justifyContent:'center', alignItems:'center', background:'yellow'}}>
-               <Card.Img src={Image3} style={{width:'50%' ,height:'50%'}}></Card.Img>
-               </Card>
-               </Col>
-           </Row>
-           </Card>
+                <Col>
+                    <Card>
+                        <Row>
+                            <Col>
+                                <Card.Img src={Image1}></Card.Img>
+                            </Col>
+                            <Col>
+                                <Card.Img src={Image2}></Card.Img>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col>
+                                <Card.Img src={Image3}></Card.Img>
+                            </Col>
+                        </Row>
+                    </Card>
+                </Col>
+            </Row>
+        </Card>
     )
 }
 
