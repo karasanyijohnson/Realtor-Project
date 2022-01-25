@@ -5,6 +5,7 @@
 }
 .buyRentCard{
     border: 0px !important;
+    height: 100%;
 }
 .exploreButton{
     width: 239px;
@@ -26,6 +27,9 @@
 } 
 .buttonsContainer{
     margin-top: 10px !important;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
  }  
 .CardText{
     font-family: Roboto;
@@ -38,9 +42,12 @@
     text-align: center;
     color: rgba(161, 98, 7, 0.8) !important;
     border: 0px !important;
+    height: 70%;
+    justify-content: center;
 }
 .container1ImageLeft{
     border: 0px !important;
+    height: 100%;
 }
 /* Container 2 Home page */
 .categoriesHomeContainer{
@@ -56,11 +63,12 @@
     font-family: Mulish;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 36px !important;
     line-height: 45px;
     align-items: center;
     text-align: center;
-    margin: 30px;
+    margin-top: 80px;
+    
 }
 .buttonCategory{
     width: 122px;
@@ -126,12 +134,13 @@
     font-family: Mulish;
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 15px;
     display: flex;
     align-items: center;
     text-align: center;
     color: rgba(161, 98, 7, 0.8);
+    justify-content: center;
 }
 .PropertyPrice{
     width: 100px;

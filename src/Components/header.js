@@ -1,11 +1,13 @@
 
 import React from 'react';
-import {Button, Card, Row, Col } from 'react-bootstrap';
+import { Button, Card, Row, Col } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom'
 import '../AppCss/header.css'
 
 
-const Header =()=>{
-    return(
+const Header = () => {
+    const navigate = useNavigate();
+    return (
         <Card className='headerContainer'>
             <Row>
                 <Col className='location'>
@@ -21,18 +23,20 @@ const Header =()=>{
                 </Col>
                 <Col>
                     <Card className='headerRight'>
-                        <Card.Link href="#">Home</Card.Link>
+                        <Card.Link href="#">
+                            <Link to="/" style={{ textDecoration: 'none', color: '#000000' }}>Home</Link>
+                        </Card.Link>
                         <Card.Link href="#">About</Card.Link>
                         <Card.Link href="#">Contact</Card.Link>
                         <Card.Link href="#">Events</Card.Link>
                         <Button className='loginButton' size='lg'>
-                            Login
+                            <Link to='/login' style={{ textDecoration: 'none', color: '#000000' }}>Login</Link>
                         </Button>
                     </Card>
                 </Col>
             </Row>
         </Card>
-       
+
     )
 }
 
