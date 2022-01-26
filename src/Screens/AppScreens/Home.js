@@ -59,11 +59,10 @@ const Home = () => {
 
                     <Col xs={6} md={4} key={house.id}>
                         <Card style={{ width: '23rem', marginTop: '30px' }} onClick={(id)=>{
-                            alert(`yes id: ${house.id}`)
-                            navigate(`:PropertyId ${house.id}`)
-                            
+                            console.log(`yes id: ${house.id}`)
+                            navigate(`/${house.id}`)
                         }}>
-                            <Card.Img variant="top" src={house.imgUrl} />
+                            <Card.Img variant="top" src={house.houseImages[0].imageUrl} />
                             <Row style={{background:'rgba(196, 196, 196, 0.2)',width:'100%', boxShadow:' 0px 4px 4px rgba(0, 0, 0, 0.25',borderRadius:'0px 0px 10px 10px',margin:'2px'}}>
                                 <Col xs={8}>
                                 <Row>
