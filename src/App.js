@@ -10,6 +10,7 @@ import Footer from './Components/Footer';
 import './App.css'
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
 import useToken from './Screens/Authentication/useToken';
+import {Container} from 'react-bootstrap'
 
 function App() {
   // const {token, setToken}= useToken()
@@ -18,9 +19,9 @@ function App() {
   // }
   
   return (
-    <div className="wrapper">
+    <Container fluid>
       <BrowserRouter>
-      <Header/>
+      {/* <Header/> */}
         <Routes>
           <Route exact path="/dashboard" element={<Dashboard/>}/>
           <Route exact path="/" element={<HomePage/>}/>
@@ -29,10 +30,10 @@ function App() {
           <Route exact path="/reset" element={<ResetPassword/>}/>
           <Route exact path="/:PropertyId" element={<PropertyDetails/>}/>
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
       </BrowserRouter>
       
-    </div>
+    </Container>
 
   );
 }

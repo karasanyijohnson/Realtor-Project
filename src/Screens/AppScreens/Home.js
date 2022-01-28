@@ -1,20 +1,23 @@
 import React from 'react';
 import { Container, Card, Row, Col, Button, Form, InputGroup, FormControl } from 'react-bootstrap';
-import {Link, useNavigate} from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Image1 from '../../Images/3D Images.svg';
 import Image2 from '../../Images/undraw_Letter_re_8m03 (2).png'
 import '../../AppCss/home.css'
 import Data from '../../Data/DumyData';
+import Header from '../../Components/Header';
+import Footer from '../../Components/Footer';
 
 const Home = () => {
     const dummyData = Data;
-    const navigate= useNavigate()
+    const navigate = useNavigate()
     return (
-        <Container>
+        <Container fluid>
+            <Header />
             {/* Container 1 */}
             <Card className='Container1'>
                 <Row>
-                    <Col style={{height:'416px'}}>
+                    <Col style={{ height: '416px' }}>
                         <Card className='buyRentCard'>
                             <Card className='CardText'>
                                 BUY  RENT <br /> SELL HOUSES<br /> ON THE GO
@@ -29,9 +32,9 @@ const Home = () => {
                             </Row>
                         </Card>
                     </Col>
-                    <Col style={{height:'416px'}}>
+                    <Col style={{ height: '416px' }}>
                         <Card className='container1ImageLeft'>
-                            <Card.Img src={Image1} style={{height:'100%'}} />
+                            <Card.Img src={Image1} style={{ height: '100%' }} />
                         </Card>
                     </Col>
                 </Row>
@@ -58,24 +61,24 @@ const Home = () => {
                 {dummyData.map((house) => (
 
                     <Col xs={6} md={4} key={house.id}>
-                        <Card style={{ width: '23rem', marginTop: '30px' }} onClick={(id)=>{
+                        <Card style={{ width: '23rem', marginTop: '30px' }} onClick={(id) => {
                             console.log(`yes id: ${house.id}`)
                             navigate(`/${house.id}`)
                         }}>
                             <Card.Img variant="top" src={house.houseImages[0].imageUrl} />
-                            <Row style={{background:'rgba(196, 196, 196, 0.2)',width:'100%', boxShadow:' 0px 4px 4px rgba(0, 0, 0, 0.25',borderRadius:'0px 0px 10px 10px',margin:'2px'}}>
+                            <Row style={{ background: 'rgba(196, 196, 196, 0.2)', width: '100%', boxShadow: ' 0px 4px 4px rgba(0, 0, 0, 0.25', borderRadius: '0px 0px 10px 10px', margin: '2px' }}>
                                 <Col xs={8}>
-                                <Row>
-                                    <p className='description'>{house.bedroom}BedRooms,{house.bathroom} Bathrooms,{house.toilete} Toiletes</p>
-                                </Row>
-                                <Col>
-                               <Row>
-                               <p className='description'>{house.location}</p>
-                               </Row>
-                                </Col>
+                                    <Row>
+                                        <p className='description'>{house.bedroom}BedRooms,{house.bathroom} Bathrooms,{house.toilete} Toiletes</p>
+                                    </Row>
+                                    <Col>
+                                        <Row>
+                                            <p className='description'>{house.location}</p>
+                                        </Row>
+                                    </Col>
                                 </Col>
                                 <Col >
-                                <p style={{color:'rgba(0, 0, 0, 0.7)', fontSize:'14px', fontWeight:'bold'}}>$ {house.price}.00</p>
+                                    <p style={{ color: 'rgba(0, 0, 0, 0.7)', fontSize: '14px', fontWeight: 'bold' }} className='text-black'>$ {house.price}.00</p>
                                 </Col>
                             </Row>
                         </Card>
@@ -140,7 +143,7 @@ const Home = () => {
                                 </Button>
                             </Card>
                         </Col>
-                        <Col style={{ height: '625px' }}>
+                        <Col>
                             <Card style={{ height: '100%', border: '0px' }}>
                                 <Card.Img src={Image2} />
                             </Card>
@@ -148,7 +151,8 @@ const Home = () => {
                     </Row>
                 </Card>
             </Card>
-
+            <p className='text-white'>yes</p>
+            <Footer />
         </Container>
     )
 }
