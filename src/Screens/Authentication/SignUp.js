@@ -3,7 +3,7 @@ import { FcGoogle } from 'react-icons/fc'
 import '../../AppCss/Signup.css'
 import PropTypes from 'prop-types';
 import image from '../../Images/undraw_secure_login_pdn4.png';
-import { Row, Col, InputGroup, FormControl, Button, Card, Container} from 'react-bootstrap';
+import { Row, Col, InputGroup, FormControl, Button, Card, Container, Form} from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom'
 import InputField from '../../Components/Input/inPutField'
 
@@ -17,7 +17,7 @@ const Login = ({ setToken }) => {
     <Container>
       <Card className='cardContainer'>
       <Row>
-        <Col>
+        <Col className='Column_size_left'>
           <Card className='cardLeft'>
             <Card.Img src={image} className='leftCardImage'/>
             <Card.Footer className='leftCardFooter'>
@@ -28,9 +28,10 @@ const Login = ({ setToken }) => {
             </Card.Footer>
           </Card>
         </Col>
-        <Col>
+        <Col className='Column_size_right'>
           <Card className='cardRight' >
-            <Card style={{ height: '70%', border: '0px' }}>
+            <Card className='card_inputs'>
+              <Form>
               <Card.Title  className='signUp_Text'>Sign Up</Card.Title>
               <InputField  placeholder="Email" label ="Email" describedby="basic-addon1" type="email"
               />
@@ -38,27 +39,15 @@ const Login = ({ setToken }) => {
               />
                <InputField placeholder="Password" label ="Password" describedby="basic-addon2" type="password"
               />
-              <Button className='go_to_home' onClick={() =>{navigate('/')}}> Sign Up </Button>
+              <Card.Footer className='go_to_home'>
+              <Button className='go_to_home_button' onClick={() =>{navigate('/')}}> Sign Up </Button>
+              </Card.Footer>
+              </Form>
             </Card>
-            <Card.Footer className='card_footer_Signup_right'>
-              <Button className='signup_with_google'
-                // style={{
-                //   width: '70%',
-                //   height: '68px',
-                //   background: '#FFFFFF',
-                //   border: '2px solid #A16207',
-                //   borderRadius: '40px',
-                //   color: '#000000',
-                //   fontWeight: '200',
-                //   fontSize: '36px',
-                //   lineHeight: '45px',
-                //   fontStyle: 'normal',
-                //   fontFamily: 'Mulish'
-                // }}
-                onClick={() => { navigate('/') }}
-              >
+            <Card className='card_footer_signup_right'>
+              <Button className='signup_with_google' onClick={() => { navigate('/') }}>
                 <FcGoogle />&nbsp;&nbsp;Sign Up With Google</Button>
-            </Card.Footer>
+            </Card>
           </Card>
         </Col>
       </Row>

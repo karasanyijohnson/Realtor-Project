@@ -2,6 +2,12 @@
     margin: 20px;
     border: 0px !important;
 }
+.Column_size_left{
+    height: 600px;
+}
+.Column_size_right{
+    height: 600px;
+}
 .cardLeft{
     height: 100%;
     border: 0px !important;
@@ -9,6 +15,10 @@
 .leftCardImage{
     height: 70%;
     justify-content: flex-end;
+}
+.card_inputs{
+    height: 70%;
+    border: 0px !important;
 }
 .leftCardFooter{
         height: 30%;
@@ -24,7 +34,7 @@
 }
 .go_to_Login{
         width: 296px;
-        height: 78px;
+        height: 60px;
         background: #A16207 !important;
         border-radius: 10px !important;
         color: #FFFFFF;
@@ -46,12 +56,21 @@
         padding: 20px
     }
 .go_to_home{
+    width:100%;
+    padding:10px;
+    background: white !important;
+    border: 0px !important;
+}
+.go_to_home_button{
             width: 100%;
-            height: 70px;
+            height: 60px;
             background: #A16207 !important;
             border: 1px solid #A16207 !important;
             border-radius: 20px !important;
             font-size: 36px !important;
+            justify-content: center !important;
+            align-items: center !important;
+          
         
     }
 .card_footer_signup_right{
@@ -60,8 +79,8 @@
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            border: 0px;
-            background: white
+            border: 0px !important;
+           
     }
  .signup_with_google{
          width: 80%;
@@ -80,4 +99,64 @@
          display: flex;
 
       
- }   
+ }  
+ /* Media Query for Mobile Devices */
+@media (max-width: 425px) {
+    .signup_with_google{
+        font-weight: 200 !important;
+        font-size: 16px !important;
+        line-height: 45px;
+        font-style: normal;
+        font-family: Mulish;
+       
+    }
+    .leftCardImage{
+        display: none;
+    }
+    .leftCardFooter{
+        height: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center !important;
+        flex-direction: column;
+        border: 0px !important;
+        background: white !important   
+}
+.Column_size_left{
+    height: 150px;
+}
+.Column_size_right{
+    height: 600px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+} 
+
+ /* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 420px) and (max-width: 768px) {
+    .signup_with_google{
+        font-weight: 200 !important;
+        font-size: 20px !important;
+        line-height: 45px;
+        font-style: normal;
+        font-family: Mulish;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+}
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+   
+}
+  
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+    
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+   
+}

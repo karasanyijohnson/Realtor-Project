@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Card, Row, Col, Button, Form, InputGroup, FormControl } from 'react-bootstrap';
+import { Container, Card, Row, Col, Button, Form, InputGroup, FormControl, Tooltip, OverlayTrigger } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom'
 import Image1 from '../../Images/3D Images.svg';
 import Image2 from '../../Images/undraw_Letter_re_8m03 (2).png'
@@ -11,16 +11,29 @@ import Footer from '../../Components/Footer';
 const Home = () => {
     const dummyData = Data;
     const navigate = useNavigate()
+    const mouseEnter=(e)=>{
+        console.log('mouseEnter')
+        console.log(e.target.style.background='grey')
+        return (
+            <Button>clike</Button>
+        )
+    }
+    const mouseLeave=()=>{
+        console.log('mouseLeave')
+        return (
+            <Button>clike</Button>
+        )
+    }
     return (
         <Container fluid>
             <Header />
             {/* Container 1 */}
             <Card className='Container1'>
                 <Row>
-                    <Col style={{ height: '416px' }}>
+                    <Col style={{ height: '416px' }} xs={12} md={6} lg={6}>
                         <Card className='buyRentCard'>
                             <Card className='CardText'>
-                                BUY  RENT <br /> SELL HOUSES<br /> ON THE GO
+                                <p> BUY  RENT <br /> SELL HOUSES<br /> ON THE GO</p>
                             </Card>
                             <Row className='buttonsContainer'>
                                 <Col>
@@ -57,37 +70,39 @@ const Home = () => {
                     <Button className='applyFilterButton'>Apply Filters</Button>
                 </Card.Body>
             </Card>
-            <Row >
-                {dummyData.map((house) => (
+            <Card className='PropertiesContainer'>
+                <Row >
+                    {dummyData.map((house) => (
 
-                    <Col xs={6} md={4} key={house.id}>
-                        <Card style={{ width: '23rem', marginTop: '30px' }} onClick={(id) => {
-                            console.log(`yes id: ${house.id}`)
-                            navigate(`/${house.id}`)
-                        }}>
-                            <Card.Img variant="top" src={house.houseImages[0].imageUrl} />
-                            <Row style={{ background: 'rgba(196, 196, 196, 0.2)', width: '100%', boxShadow: ' 0px 4px 4px rgba(0, 0, 0, 0.25', borderRadius: '0px 0px 10px 10px', margin: '2px' }}>
-                                <Col xs={8}>
-                                    <Row>
-                                        <p className='description'>{house.bedroom}BedRooms,{house.bathroom} Bathrooms,{house.toilete} Toiletes</p>
-                                    </Row>
-                                    <Col>
+                        <Col xs={12} md={6} lg={4} key={house.id}>
+                            <Card style={{ width: '25rem', marginTop: '30px' }} onClick={(id) => {
+                                console.log(`yes id: ${house.id}`)
+                                navigate(`/${house.id}`)
+                            }}>
+                                <Card.Img variant="top" src={house.houseImages[0].imageUrl} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} />
+                                <Row style={{ background: 'rgba(196, 196, 196, 0.2)', width: '100%', boxShadow: ' 0px 4px 4px rgba(0, 0, 0, 0.25', borderRadius: '0px 0px 10px 10px', margin: '2px' }}>
+                                    <Col xs={6}>
                                         <Row>
-                                            <p className='description'>{house.location}</p>
+                                            <p className='description'>{house.bedroom}BedRooms,{house.bathroom} Bathrooms,{house.toilete} Toiletes</p>
                                         </Row>
+                                        <Col>
+                                            <Row>
+                                                <p className='description'>{house.location}</p>
+                                            </Row>
+                                        </Col>
                                     </Col>
-                                </Col>
-                                <Col >
-                                    <p style={{ color: 'rgba(0, 0, 0, 0.7)', fontSize: '14px', fontWeight: 'bold' }} className='text-black'>$ {house.price}.00</p>
-                                </Col>
-                            </Row>
-                        </Card>
-                    </Col>
+                                    <Col >
+                                        <p style={{ color: 'rgba(0, 0, 0, 0.7)', fontSize: '14px', fontWeight: 'bold' }} className='text-black'>$ {house.price}.00</p>
+                                    </Col>
+                                </Row>
+                            </Card>
+                        </Col>
 
-                ))
+                    ))
 
-                }
-            </Row>
+                    }
+                </Row>
+            </Card>
             {/* ======================================================================================================================= */}
             {/* Explorer Button Section */}
             <Card style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '30px', border: '0px' }}>

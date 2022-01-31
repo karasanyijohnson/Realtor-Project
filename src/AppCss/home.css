@@ -1,7 +1,8 @@
 /* Home First Container */
 .Container1{
-    margin-top: 60px;
     border: 0px !important;
+    margin: 30px;
+
 }
 .buyRentCard{
     border: 0px !important;
@@ -101,13 +102,12 @@
     margin: 10px;
 }
 /* CSS for Properties Container on Homepage*/
+.PropertiesContainer{
+    margin: 20px;
+    border: 0px !important;
+}
 .CardPropertiesContainer{
    display:flex;
-   /* flex-wrap:wrap;
-   flex-Direction:column; */
-   /* justify-content:center; */
-   /* align-items:center; */
-   /* background:grey */
    border: 1px solid;
    width: 30%;
    margin: 10px;
@@ -154,4 +154,12 @@
     align-items: center;
     text-align: right;
     color: rgba(0, 0, 0, 0.7)
+}
+@media (max-width:425px){
+    .CardText{
+        font-size: 20px;
+    }
+    .container1ImageLeft{
+        display: none !important;
+    }
 }

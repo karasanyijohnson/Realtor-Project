@@ -1,7 +1,6 @@
 .input_container{
-    width: 583px;
-    height: 100px;
-    margin: 10px;
+    height: 80px;
+    padding: 10px;
 }
 .formControl_Input{
         width: 100%;

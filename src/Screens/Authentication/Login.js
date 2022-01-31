@@ -2,7 +2,8 @@ import React, { useState, } from 'react'
 import { FcGoogle } from 'react-icons/fc'
 import PropTypes from 'prop-types';
 import image from '../../Images/undraw_Login_re_4vu2.png'
-import { Row, Card, Button, Col, InputGroup, FormControl, Container, Form } from 'react-bootstrap';
+import { Row, Card, Button, Col,Container, Form } from 'react-bootstrap';
+import InputField from '../../Components/Input/inPutField'
 import { useNavigate, Link } from 'react-router-dom'
 import '../../AppCss/Login.css'
 
@@ -36,19 +37,15 @@ const Login = ({ setToken }) => {
   return (
     <Container>
       <Card className='cardContainer'>
-      <Row>
+      <Row className='loginContainer'>
         <Col className='leftColumn'>
           <Card className='signinContainer'>
             <Card.Text className='signinHeader'>Sign In</Card.Text>
           </Card>
           <Card className='form_input_container'>
             <Form>
-              <Form.Group className="FormInputGroup" controlId="formBasicEmail">
-                <Form.Control className='forminputControl' type="email" placeholder="Email" />
-              </Form.Group>
-              <Form.Group className="FormInputGroup" controlId="formBasicPassword">
-                <Form.Control className='forminputControl' type="password" placeholder="Password" />
-              </Form.Group>
+              <InputField  placeholder="Email" label ="Email" describedby="basic-addon1" type="email"/>
+              <InputField  placeholder="Password" label ="Password" describedby="basic-addon1" type="password"/>
               <Card style={{border:'0px'}}>
                 <Button variant="primary" className='signinButton' onClick={()=>{
                   navigate('/')
@@ -62,7 +59,9 @@ const Login = ({ setToken }) => {
             <Link to='/reset' className='link_Reset'>
             <Card.Text className='resetText'>Forgot Password?</Card.Text>
             </Link>
-            <Button className='googleSignin'><FcGoogle />Sign In With Google</Button>
+            <Card className='signinWithGoogle'>
+            <Button className='googleSignin'><FcGoogle /> &nbsp;Sign In With Google</Button>
+            </Card>
           </Card>
         </Col>
         <Col className='rightColumn'>
