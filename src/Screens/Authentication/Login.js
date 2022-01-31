@@ -3,7 +3,7 @@ import { FcGoogle } from 'react-icons/fc'
 import PropTypes from 'prop-types';
 import image from '../../Images/undraw_Login_re_4vu2.png'
 import { Row, Card, Button, Col,Container, Form } from 'react-bootstrap';
-import InputField from '../../Components/Input/inPutField'
+import InputField from '../../Components/Input/InPutField'
 import { useNavigate, Link } from 'react-router-dom'
 import '../../AppCss/Login.css'
 
