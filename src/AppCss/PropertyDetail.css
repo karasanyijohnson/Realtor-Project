@@ -1,0 +1,221 @@
+.mainRow{
+    margin: 50px !important;
+}
+.cardLeftColumn{
+    border: 0px !important;
+}
+.cardImage{
+    padding: 10px;
+}
+.cardFooter{
+display: flex;
+justify-content: center;
+align-items: center;
+background: white !important;
+border: 0px !important;
+}
+.footerButton{
+width: 80%;
+height: 72px;
+background: #A16207 !important;
+border-radius: 10px !important;
+}
+.cardRightColumn{
+    border: 0px !important;
+}
+.cardRightHeader{
+    border: 0px !important;
+    background: white !important;
+}
+.rowHeader{
+    justify-content: center;
+    align-items: center;
+}
+.reactorText{
+font-family: Mulish;
+font-style: normal;
+font-weight: 800;
+font-size: 30px;
+line-height: 38px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #A16207;
+}
+.subColumn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subColumnIcon{
+    color: #A16207;
+    height: 30px;
+    width: 30px;
+}
+.subColumnText{
+font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+margin-left: 10px;
+}
+.amountRow{
+    justify-content: center;
+    align-items: center;
+}
+.amount{
+font-family: Mulish;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 38px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #A16207;
+}
+.roomDescr{
+font-family: Mulish;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 25px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+}
+.location{
+font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 25px;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+color: rgba(0, 0, 0, 0.8);
+}
+.cardText{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+.greenCircle{
+    color: green;
+}
+.statusText{
+font-family: Mulish;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 30px;
+display: flex;
+align-items: center;
+color: rgba(161, 98, 7, 0.7);
+margin-left: 10px;
+}
+.estimatedPayment{
+font-family: Mulish;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 25px;
+display: flex;
+align-items: center;
+color: rgba(0, 0, 0, 0.8);
+}
+.bookHouse{
+    display: flex;
+    justify-content: center;
+}
+.bookHouseButton{
+width: 60% !important;
+height: 70px;
+background: #A16207 !important;
+border-radius: 10px !important;
+}
+/* CSS for Modal start from here */
+.cardHeaderModal{
+    justify-content: center;
+    align-items: center;
+    border: 0px !important;
+}
+.cardHeaderModalTitle{
+    font-family: Mukta;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7) !important;
+}
+.attentionMessage{
+    font-family: Mukta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #EF4444;
+}
+.formControl{
+    height: 50px;
+}
+.formLabel{
+    color: #000000;
+    font-family: Mukta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+
+}
+.pickDateandTime{
+    display: flex;
+}
+.FormText{
+    font-family: Mukta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px !important;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    color: #000000 !important;
+}
+.paymentContainer{
+    display: flex;
+    flex-direction: row !important;
+    border: 0px !important;
+}
+.paymentCard{
+    flex-direction:row !important;
+    margin:20px;
+    border: 0px !important;
+}
+.cardIcon{
+    border: 0px !important;
+}
+.submitContainer{
+    justify-content: center;
+    align-items: center;
+    border: 0px !important;
+    padding: 20px;
+}
+.submitButton{
+    width: 40%;
+    background: #A16207 !important;
+   border-radius: 10px !important;
+}

@@ -166,7 +166,6 @@ const Home = () => {
                     </Row>
                 </Card>
             </Card>
-            <p className='text-white'>yes</p>
             <Footer />
         </Container>
     )
