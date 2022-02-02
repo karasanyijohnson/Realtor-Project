@@ -1,0 +1,45 @@
+ .parent{
+   position: relative;
+   
+  
+ }
+  .text{
+    margin-top: 5%;
+    color: brown;
+   /* padding: 10px; */
+    font-size: 40px;
+    
+    margin-left:10%;    
+  }
+.btn__container{
+  position: absolute;
+  top: 500px;
+  left: 200px;
+  
+ 
+}
+.btn__container button{
+  
+  color: #a52a2a;
+  border-radius: 5px;
+  margin-top: 1%;
+  background-color: skyblue;
+  margin-right: 30px;
+  font-size: 40px;
+ 
+}
+.all1{
+  display: flex;
+}
+.btn__container{
+  height: 80px;
+  
+}
+.photo{
+  margin-left: 30%;
+  
+  
+}
+.btn__container{
+  font-size: 20px;
+}

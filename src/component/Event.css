@@ -1,0 +1,29 @@
+
+.button1 button{
+  float: left;
+  margin-left: 1%;
+  margin-top: 1%;
+  border-radius: 5px;
+  font-size: 30px;
+  color: blue;
+   background-color:sienna;
+  color: white;
+}
+.btn__houses1{
+    margin-top: 8%;
+    margin-left: 20%;
+
+}
+.button2 button {
+    float: left;
+   margin-left: 3%;
+  
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 5%;
+   
+    
+}
+.btn__button2{
+  font-size: 40px
+}
