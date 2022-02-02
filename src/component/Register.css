@@ -1,0 +1,91 @@
+
+
+*{box-sizing:border-box;}
+ 
+ /* Full-width input fields */
+ input[type=text], input[type=password] {
+   width: 100%;
+   padding: 15px;
+  
+   background: white;
+   color: black;
+ }
+ 
+ input[type=text]:focus, input[type=password]:focus {
+   background-color: hsl(0, 0%, 87%); 
+ }
+ /* Overwrite default styles of hr */
+ hr {
+   border: 1px solid blue;
+  
+   margin-right: 70%;
+ }
+ 
+ /* Set a style for the submit/register button */
+ .registerbtn {
+   background-color: #04AA6D;
+  
+   padding: 10px 90px;
+   margin: 8px 0;
+ 
+   cursor: pointer;
+   width: 20%;
+   border-radius:10px;
+   opacity: 1;
+ }
+ 
+ .registerbtn:hover {
+   opacity:1;
+ }
+ 
+ /* Add a blue text color to links */
+ a {
+   color: dodgerblue;
+   padding: 10px;
+ }
+ 
+ /* Set a grey background color and center the text of the "sign in" section */
+ .signin {
+   background-color: #f1f1f1;
+   
+ }
+.imagi2{
+  margin-left: 50%;
+
+  
+}
+
+.cont{
+  display: flex;
+  margin-top: 2%;
+  margin-left: 20%;
+  margin-right: 40%;
+  font-size: 16px;
+
+  
+}
+
+.headerOne{
+  margin-left: 20px;
+  text-align: left;
+}
+.rightSide{
+  /* background-color: blueviolet; */
+  width: 30%;
+  height: 700px;
+  margin-right: 10%;
+}
+
+.leftSide{
+  /* background-color: cornflowerblue; */
+  width: 50%;
+  height: 700px;
+  margin-top: 0rem;
+ 
+}
+
+
+
+
+
+

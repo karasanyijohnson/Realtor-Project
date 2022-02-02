@@ -1,0 +1,58 @@
+/* h3{
+  color: brown;
+  font-size: 30px; 
+  margin-left: 50%;
+  margin-top: 5%;
+}
+.btn__send{
+margin-left: 50px;
+float: left;
+margin-right: 70%;
+font-size: 30px;
+padding: 0%;
+}
+.photo5{
+margin-left: 50%;
+margin-top: 0%; */
+/* } */
+
+.form__parents{
+    text-align: center;
+    color: brown;
+    padding-top: 4rem;
+}
+.bdy__container{
+/* display: flex; */
+display: flex;
+padding-top: 0rem;
+
+
+}
+.btn__send{
+    width: 20%;
+    padding-top: 130px;
+    margin-left: 30%;
+    /* display: inline; */
+    font-size: 20px;
+    color: brown;
+    
+
+}
+.pht__image{
+    width: 50%;
+    padding-left: 10px;
+    padding-top:0px;
+    margin-left: 20%;
+    
+}
+.photo5{
+    width: 600px;
+    height: 700px;
+}
+  .placehold{
+    border-radius: 10px;
+    font-size: 20px;
+    color: brown;
+    margin-top: 20%;
+    
+}
