@@ -7,9 +7,9 @@
     align-items: center;
     border: 0px !important 
 }
-.location{
+.locationHeader{
     display:flex;
-     justify-content:flex-end;
+    justify-content:flex-end;
     background: (196, 196, 196, 0.1)
 }
 .card-link{

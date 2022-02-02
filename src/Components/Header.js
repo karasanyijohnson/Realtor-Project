@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <Card className='headerContainer'>
             <Row>
-                <Col className='location'>
+                <Col className='locationHeader'>
                     <p>Kigali, Rwanda &nbsp;&nbsp;</p>
                     <p>+ 250 7811 111 111</p>
                 </Col>
