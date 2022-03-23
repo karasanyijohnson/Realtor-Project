@@ -1,10 +1,14 @@
 import React from 'react';
-import {Card, Row, Col} from 'react-bootstrap';
+import {Card, Row, Col,Button} from 'react-bootstrap';
 
-const ColumnDashboard =()=>{
+const ColumnDashboard =(props)=>{
     return(
-        <Card style={{width:'100%'}}>
-           1 
+        <Card className='ColumnDashboard'>
+         {props.title}
+         <Card style={{flexDirection:'row', justifyContent:'space-around'}}>
+             <p>{props.location}</p>
+             <Button>View</Button>
+         </Card>
         </Card>
     )
 }

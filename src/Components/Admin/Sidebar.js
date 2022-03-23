@@ -10,14 +10,14 @@ const Sidebar = (props) => {
             </Card>
             <Card>
                 <Nav defaultActiveKey="/home" className="flex-column">
-                    <Nav.Link active href="/home">Dashboard</Nav.Link>
-                    <Nav.Link eventKey="link-1">Add House</Nav.Link>
-                    <Nav.Link eventKey="link-2">Edit House</Nav.Link>
-                    <Nav.Link eventKey="link-1">Houses To Rent</Nav.Link>
-                    <Nav.Link eventKey="link-2">Houses On Sale</Nav.Link>
-                    <Nav.Link eventKey="link-2">Booked Houses</Nav.Link>
-                    <Nav.Link eventKey="link-1">Rented Houses</Nav.Link>
-                    <Nav.Link eventKey="link-2">Sold Houses</Nav.Link>
+                    <Nav.Link active href="/dashboard">Dashboard</Nav.Link>
+                    <Nav.Link href="/addHouse">Add House</Nav.Link>
+                    <Nav.Link href='/editHouse'>Edit House</Nav.Link>
+                    <Nav.Link href='/housesToRent'>Houses To Rent</Nav.Link>
+                    <Nav.Link href='/housesOnSale'>Houses On Sale</Nav.Link>
+                    <Nav.Link href='/bookedHouses'>Booked Houses</Nav.Link>
+                    <Nav.Link href='/rentedHouses'>Rented Houses</Nav.Link>
+                    <Nav.Link href='/soldHouses'>Sold Houses</Nav.Link>
                 </Nav>
             </Card>
         </Container>

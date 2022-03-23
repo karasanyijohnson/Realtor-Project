@@ -1,0 +1,31 @@
+.cardStatusContainer{
+    flex-direction: row !important;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black !important;
+}
+.ColumnDashboard{
+    width: 100%;
+}
+.HeaderContainer{
+border: 1px solid !important;
+align-items: flex-end;
+}
+.HeaderContent{
+    border: 0px !important;
+    width: 50%;
+    justify-content: space-between;
+    flex-Direction: row !important;
+    margin-top:20px;
+    margin-bottom:20px;
+    align-items:center
+}
+.HeaderContentTitle{
+    color: #A16207;
+}
+.overViewColumn{
+    border: 1px solid black;
+   
+}
