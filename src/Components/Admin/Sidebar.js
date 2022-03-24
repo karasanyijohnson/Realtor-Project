@@ -4,11 +4,11 @@ import {FiMenu} from 'react-icons/fi'
 
 const Sidebar = (props) => {
     return (
-        <Container>
-            < Card>
-              <FiMenu/>
+        <Container style={{background:'#F5F5F5', height:'100%'}}>
+            <Card style={{alignItems:'end', background:'#F5F5F5', border:'0px'}}>
+              <Card.Title style={{marginTop:'20px', marginBottom:'20px',}}><FiMenu /></Card.Title>
             </Card>
-            <Card>
+            <Card style={{alignItems:'center',background:'#F5F5F5', border:'0px'}}>
                 <Nav defaultActiveKey="/home" className="flex-column">
                     <Nav.Link active href="/dashboard">Dashboard</Nav.Link>
                     <Nav.Link href="/addHouse">Add House</Nav.Link>
