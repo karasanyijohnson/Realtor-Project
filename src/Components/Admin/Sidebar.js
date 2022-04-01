@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Container, Nav } from 'react-bootstrap';
-import {FiMenu} from 'react-icons/fi'
+import {FiMenu} from 'react-icons/fi';
+import '../../AppCss/sidebarAdminPage.css'
 
 const Sidebar = (props) => {
     return (
@@ -10,14 +11,14 @@ const Sidebar = (props) => {
             </Card>
             <Card style={{alignItems:'center',background:'#F5F5F5', border:'0px'}}>
                 <Nav defaultActiveKey="/home" className="flex-column">
-                    <Nav.Link active href="/dashboard">Dashboard</Nav.Link>
-                    <Nav.Link href="/addHouse">Add House</Nav.Link>
-                    <Nav.Link href='/editHouse'>Edit House</Nav.Link>
-                    <Nav.Link href='/housesToRent'>Houses To Rent</Nav.Link>
-                    <Nav.Link href='/housesOnSale'>Houses On Sale</Nav.Link>
-                    <Nav.Link href='/bookedHouses'>Booked Houses</Nav.Link>
-                    <Nav.Link href='/rentedHouses'>Rented Houses</Nav.Link>
-                    <Nav.Link href='/soldHouses'>Sold Houses</Nav.Link>
+                    <Nav.Link active href="/dashboard" className='activeLink'>Dashboard</Nav.Link>
+                    <Nav.Link href="/addHouse" className='navLink'>Add House</Nav.Link>
+                    <Nav.Link href='/editHouse' className='navLink'>Edit House</Nav.Link>
+                    <Nav.Link href='/housesToRent' className='navLink'>Houses To Rent</Nav.Link>
+                    <Nav.Link href='/housesOnSale' className='navLink'>Houses On Sale</Nav.Link>
+                    <Nav.Link href='/bookedHouses' className='navLink'>Booked Houses</Nav.Link>
+                    <Nav.Link href='/rentedHouses' className='navLink'>Rented Houses</Nav.Link>
+                    <Nav.Link href='/soldHouses' className='navLink'>Sold Houses</Nav.Link>
                 </Nav>
             </Card>
         </Container>

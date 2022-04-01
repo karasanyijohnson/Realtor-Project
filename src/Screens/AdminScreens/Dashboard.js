@@ -1,17 +1,33 @@
 import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap'
-import Sidebar from '../../Components/Admin/Sidebar';
+import { Container, Row, Col, Card, Button, Nav} from 'react-bootstrap'
 import HeaderDashboard from '../../Components/Admin/HeaderDashboard';
 import '../../AppCss/admin.css';
 import { newHouseForSale, newHouseForRent } from '../../Data/DashboardData';
-import { BsFillHouseFill } from 'react-icons/bs'
+import { BsFillHouseFill } from 'react-icons/bs';
+import {FiMenu} from 'react-icons/fi';
 
 const Dashboard = () => {
   return (
     <Container fluid style={{ border: '1px solid' }}>
       <Row style={{ border: '1px solid red' }}>
         <Col style={{ border: '1px solid blue'}}>
-          <Sidebar />
+        <Container style={{background:'#F5F5F5', height:'100%'}}>
+            <Card style={{alignItems:'end', background:'#F5F5F5', border:'0px'}}>
+              <Card.Title style={{marginTop:'20px', marginBottom:'20px',}}><FiMenu /></Card.Title>
+            </Card>
+            <Card style={{alignItems:'center',background:'#F5F5F5', border:'0px'}}>
+                <Nav defaultActiveKey="/home" className="flex-column">
+                    <Nav.Link active href="/dashboard" className='activeLink'>Dashboard</Nav.Link>
+                    <Nav.Link href="/addHouse" className='navLink'>Add House</Nav.Link>
+                    <Nav.Link href='/editHouse' className='navLink'>Edit House</Nav.Link>
+                    <Nav.Link href='/housesToRent' className='navLink'>Houses To Rent</Nav.Link>
+                    <Nav.Link href='/housesOnSale' className='navLink'>Houses On Sale</Nav.Link>
+                    <Nav.Link href='/bookedHouses' className='navLink'>Booked Houses</Nav.Link>
+                    <Nav.Link href='/rentedHouses' className='navLink'>Rented Houses</Nav.Link>
+                    <Nav.Link href='/soldHouses' className='navLink'>Sold Houses</Nav.Link>
+                </Nav>
+            </Card>
+        </Container>
         </Col>
         <Col xs={8} style={{ border: '3px solid grey' }}>
           <HeaderDashboard title="OverView" />
