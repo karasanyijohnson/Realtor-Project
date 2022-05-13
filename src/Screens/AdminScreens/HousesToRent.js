@@ -1,18 +1,19 @@
 import React from 'react';
-import { Container, Row, Col, Nav, Card, Table } from 'react-bootstrap';
+import { Container, Row, Col, Nav, Card, Table, Button } from 'react-bootstrap';
 import { FiMenu } from 'react-icons/fi';
 import HeaderDashboard from '../../Components/Admin/HeaderDashboard';
 import '../../AppCss/sidebarAdminPage.css'
-import '../../AppCss/addHouse.css'
+import '../../AppCss/houseToRent.css'
+
 
 const HouseforRent = () => {
     return (
         <Container fluid >
             <Row>
                 <Col>
-                    <Container style={{ background: '#F5F5F5', height: '100%' }}>
-                        <Card style={{ alignItems: 'end', background: '#F5F5F5', border: '0px' }}>
-                            <Card.Title style={{ marginTop: '20px', marginBottom: '20px', }}><FiMenu /></Card.Title>
+                    <Container className='leftContainer'>
+                        <Card className='menuIconCard'>
+                            <Card.Title className='icon'><FiMenu /></Card.Title>
                         </Card>
                         <Card style={{ alignItems: 'center', background: '#F5F5F5', border: '0px' }}>
                             <Nav defaultActiveKey="/home" className="flex-column">
@@ -30,7 +31,6 @@ const HouseforRent = () => {
                 </Col>
                 <Col xs={8}>
                     <HeaderDashboard title="Houses to Rent" />
-
                     <Container fluid>
                         <Table striped bordered hover>
                             <thead>
@@ -44,33 +44,43 @@ const HouseforRent = () => {
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                   <tr>
-                                   <td>View</td>
-                                    <td>Edit</td>
-                                    <td>Delete</td>
-                                   </tr>
+                                    <td>Family House</td>
+                                    <td>Masaka KG234 ST 23</td>
+                                    <tr>
+                                        <td><Button className='viewButton'>View</Button></td>
+                                        <td><Button className='editButton'>Edit</Button></td>
+                                        <td><Button className='deleteButton'>Delete</Button></td>
+                                    </tr>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
+                                    <td>Family House</td>
+                                    <td>Masaka KG234 ST 23</td>
                                     <tr>
-                                   <td>View</td>
-                                    <td>Edit</td>
-                                    <td>Delete</td>
-                                   </tr>
+                                        <td><Button className='viewButton'>View</Button></td>
+                                        <td><Button className='editButton'>Edit</Button></td>
+                                        <td><Button className='deleteButton'>Delete</Button></td>
+                                    </tr>
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
+                                    <td>Family House</td>
+                                    <td>Masaka KG234 ST 23</td>
                                     <tr>
-                                   <td>View</td>
-                                    <td>Edit</td>
-                                    <td>Delete</td>
-                                   </tr>
+                                        <td><Button className='viewButton'>View</Button></td>
+                                        <td><Button className='editButton'>Edit</Button></td>
+                                        <td><Button className='deleteButton'>Delete</Button></td>
+                                    </tr>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Family House</td>
+                                    <td>Masaka KG234 ST 23</td>
+                                    <tr>
+                                        <td><Button className='viewButton'>View</Button></td>
+                                        <td><Button className='editButton'>Edit</Button></td>
+                                        <td><Button className='deleteButton'>Delete</Button></td>
+                                    </tr>
                                 </tr>
                             </tbody>
                         </Table>
