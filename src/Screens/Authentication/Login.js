@@ -9,16 +9,16 @@ import { useNavigate, Link } from 'react-router-dom'
 import '../../AppCss/Login.css'
 
 
-async function loginUser(credentials) {
-  return fetch('http://localhost:8080/login', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(credentials)
-  })
-    .then(data => data.json())
-}
+// async function loginUser(credentials) {
+//   return fetch('http://localhost:8080/login', {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify(credentials)
+//   })
+//     .then(data => data.json())
+// }
 
 
 // const Login = ({ setToken }) => {
@@ -32,7 +32,7 @@ async function loginUser(credentials) {
   //   e.preventDefault();
   //   const token = await loginUser({
   //     email,
-  
+
   //     password
   //   });
   //   setToken(token);

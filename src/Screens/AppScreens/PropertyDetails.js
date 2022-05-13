@@ -36,10 +36,10 @@ const PropertyDetails = () => {
   const mouseLeave=()=>{
     showMarked(false)
   }
-  useEffect(()=>{
-    const timer= setTimeout(mouseLeave, 1000);
-    return ()=>clearTimeout(timer);
-  },[mouseLeave])
+  // useEffect(()=>{
+  //   const timer= setTimeout(mouseLeave, 1000);
+  //   return ()=>clearTimeout(timer);
+  // },[mouseLeave])
   const PropertyDetailId = useParams()
   const Id = PropertyDetailId.PropertyId
   const myData = Data;

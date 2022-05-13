@@ -1,4 +1,5 @@
-import React, { useState, } from 'react'
+// import React, { useState, } from 'react'
+import React from 'react'
 import { FcGoogle } from 'react-icons/fc'
 import '../../AppCss/Signup.css'
 import PropTypes from 'prop-types';
