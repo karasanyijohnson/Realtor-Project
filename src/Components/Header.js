@@ -1,12 +1,12 @@
 
 import React from 'react';
-import { Button, Card, Row, Col, Container } from 'react-bootstrap';
+import { Button, Card, Row, Col,} from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom'
 import '../AppCss/header.css'
 
 
 const Header = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     return (
         <Card className='headerContainer'>
             <Row>

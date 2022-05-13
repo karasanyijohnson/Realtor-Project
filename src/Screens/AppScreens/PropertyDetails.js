@@ -21,8 +21,8 @@ import MomoIcon from '../../Images/momo.PNG';
 import MasterCardIcon from '../../Images/mastercard.PNG';
 import AirTelIcon from '../../Images/airtel.PNG';
 import '../../AppCss/PropertyDetail.css'
-import Header from '../../Components/Header';
-import Footer from '../../Components/Footer'
+// import Header from '../../Components/Header';
+// import Footer from '../../Components/Footer'
 
 const PropertyDetails = () => {
   const [show, setShow] = useState(false);
@@ -39,7 +39,7 @@ const PropertyDetails = () => {
   useEffect(()=>{
     const timer= setTimeout(mouseLeave, 1000);
     return ()=>clearTimeout(timer);
-  },[])
+  },[mouseLeave])
   const PropertyDetailId = useParams()
   const Id = PropertyDetailId.PropertyId
   const myData = Data;

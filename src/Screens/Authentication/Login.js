@@ -1,4 +1,5 @@
-import React, { useState, } from 'react'
+// import React, { useState, } from 'react'
+import React from 'react'
 import { FcGoogle } from 'react-icons/fc'
 import PropTypes from 'prop-types';
 import image from '../../Images/undraw_Login_re_4vu2.png'
@@ -20,20 +21,21 @@ async function loginUser(credentials) {
 }
 
 
-const Login = ({ setToken }) => {
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
+// const Login = ({ setToken }) => {
+  const Login = () => {
+  // const [email, setEmail] = useState();
+  // const [password, setPassword] = useState();
 
   const navigate = useNavigate();
   // Function to submit the login data in form
-  const handleSubmit = async e => {
-    e.preventDefault();
-    const token = await loginUser({
-      email,
-      password
-    });
-    setToken(token);
-  }
+  // const handleSubmit = async e => {
+  //   e.preventDefault();
+  //   const token = await loginUser({
+  //     email,
+  //     password
+  //   });
+  //   setToken(token);
+  // }
   return (
     <Container>
       <Card className='cardContainer'>

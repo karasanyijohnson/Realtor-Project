@@ -3,15 +3,17 @@ import { FcGoogle } from 'react-icons/fc'
 import '../../AppCss/Signup.css'
 import PropTypes from 'prop-types';
 import image from '../../Images/undraw_secure_login_pdn4.png';
-import { Row, Col, InputGroup, FormControl, Button, Card, Container, Form} from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom'
+import { Row, Col, Button, Card, Container, Form} from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom'
 import InputField from '../../Components/Input/InPutField'
 
 
-const Login = ({ setToken }) => {
-  const [email, setEmail] = useState();
-  const [username, setUsername] = useState();
-  const [password, setPassword] = useState();
+// const Login = ({ setToken }) => {
+  
+const Login = () => {
+  // const [email, setEmail] = useState();
+  // const [username, setUsername] = useState();
+  // const [password, setPassword] = useState();
   const navigate = useNavigate();
   return (
     <Container>
