@@ -1,7 +1,6 @@
 import React from 'react';
 import HomePage from './Screens/AppScreens/Home';
 import Login from './Screens/Authentication/Login';
-import Dashboard from './Screens/AdminScreens/Dashboard';
 import SignUp from './Screens/Authentication/SignUp';
 import ResetPassword from './Screens/Authentication/ResetPassword';
 import PropertyDetails from './Screens/AppScreens/PropertyDetails';
@@ -13,8 +12,6 @@ import HousesOnSale from './Screens/AdminScreens/HousesOnSale';
 import HousesToRent from './Screens/AdminScreens/HousesToRent'
 import RentedHouses from './Screens/AdminScreens/RentedHouses';
 import SoldHouses from './Screens/AdminScreens/AddHouse'
-import Header from './Components/Header';
-import Footer from './Components/Footer';
 import Drawer from './Screens/AdminScreens/Dashboard';
 import './App.css'
 import {BrowserRouter,Route,Routes} from 'react-router-dom'
