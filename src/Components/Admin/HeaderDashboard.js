@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Card, Row, Col } from 'react-bootstrap';
+import { Container, Card,} from 'react-bootstrap';
 import Image from '../../Images/avatar.jpg';
 import '../../AppCss/admin.css'
 
