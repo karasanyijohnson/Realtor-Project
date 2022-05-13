@@ -1,0 +1,27 @@
+.RightCard{
+    border: gray 1px solid !important;
+    margin-bottom: 20px;
+}
+.submitButton{
+    background-color: #A16207 !important;
+    border-radius: 20px !important;
+    width: 20%;
+    border-color: #A16207 !important;
+}
+.generalCard{
+    border: 0px !important;
+}
+.addImageCard{
+    border: 0px !important;
+    margin-top: 30px;
+}
+.descriptionCard{
+    border: 0px !important;
+    margin-top: 30px; 
+}
+.submitCard{
+    justify-content: center;
+    align-items: center;
+    border: 0px !important;
+    margin-bottom: 30px;
+}
